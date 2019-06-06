@@ -1,0 +1,1 @@
+# kami_blog2

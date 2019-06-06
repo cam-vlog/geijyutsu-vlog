@@ -1,0 +1,117 @@
+.contentWrapper {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+header .contentWrapper {
+  padding-top: 18rem;
+}
+
+h1{
+  font-family: "遊明体", "YuMincho", "ヒラギノ明朝　ProN W3",
+          "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+  color: black;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0 5px rgba(31,50,53,0,8), 0 0 5px rgba(31,50,53,0,3);
+  margin: 0;
+}
+
+h2 {
+font-family: "遊明体", "YuMincho", "ヒラギノ明朝　ProN W3",
+        "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+font-size: 2.6rem;
+letter-spacing: 0.5rem;
+}
+
+#aboutus p {
+font-size: 1.2rem;
+line-height: 2.6rem;
+}
+
+#news dl {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#news dt,#news dd {
+  float: left;
+  text-align: left;
+  padding: 10px 0;
+  line-height: 160%;
+}
+
+#news dt {
+  width: 10%;
+}
+
+#news dd {
+  width: 80%;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+header nav {
+  position: absolute;
+  right: 0;
+}
+
+header a {
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(0,0,0,0,6);
+}
+
+header ul {
+  display: flex;
+  margin: 0;
+  padding: 20px;
+}
+
+header li {
+  padding: 0 15px;
+}
+
+body,a {
+  color: #515151;
+}
+
+#css-slider {
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+  margin: auto;
+}
+
+.slide-item {
+	width: 600px;
+	height: 400px;
+	float: left;
+	position: relative;
+}
+
+
+.slider-wrapper {
+	width: 600%;
+	position: relative;
+	left: 0;
+	will-change: transform;
+	animation: slider 10s infinite;
+}
+
+@keyframes slider {
+  25% { transform: translateX(0); }
+  50% { transform: translateX(-600px); }
+  75% { transform: translateX(-1200px); }
+  100% { transform: translateX(0); }
+}
