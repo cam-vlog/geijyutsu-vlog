@@ -85,3 +85,42 @@ header li {
 body,a {
   color: #515151;
 }
+
+#css-slider {
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+  margin: auto;
+}
+
+.slide-item {
+	width: 600px;
+	height: 400px;
+	float: left;
+	position: relative;
+}
+
+
+.slider-wrapper {
+	width: 600%;
+	position: relative;
+	left: 0;
+	will-change: transform;
+	animation: slider 10s infinite;
+}
+
+@keyframes slider {
+  25% { transform: translateX(0); }
+  50% { transform: translateX(-600px); }
+  75% { transform: translateX(-1200px); }
+  100% { transform: translateX(0); }
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .txt {
+    display: inline-block;
+    text-align: left;
+  }
